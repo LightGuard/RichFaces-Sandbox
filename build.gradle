@@ -1,0 +1,25 @@
+apply id: 'war'
+apply id: 'jetty'
+
+repositories {
+  mavenCentral()
+  mavenRepo name: 'jboss', urls: 'http://repository.jboss.org/maven2/'
+}
+
+configurations {
+  all*.exclude module: 'el-api'
+  all*.exclude module: 'xstream'
+  all*.exclude module: 'xpp3_min'
+}
+
+dependencies {
+  compile 'org.jboss.seam:jboss-seam:2.2.0.GA' 
+
+  runtime 'javax.faces:jsf-impl:1.2_13'
+  runtime 'javax.faces:jsf-api:1.2_13'
+  runtime 'org.richfaces.framework:richfaces-api:3.3.2.SR1'
+  runtime 'org.richfaces.framework:richfaces-impl:3.3.2.SR1'
+  runtime 'org.richfaces.ui:richfaces-ui:3.3.2.SR1'
+  runtime 'com.sun.facelets:jsf-facelets:[1.1.14,)'
+  runtime 'org.jboss.seam:jboss-seam-ui:2.2.0.GA' 
+}
