@@ -40,7 +40,6 @@
 
   <!-- Seam -->
 
-  <!--
   <listener>
     <listener-class>org.jboss.seam.servlet.SeamListener</listener-class>
   </listener>
@@ -74,7 +73,6 @@
     <servlet-name>Document Store Servlet</servlet-name>
     <url-pattern>/seam/docstore/*</url-pattern>
   </servlet-mapping>
-  -->
 
   <!-- Facelets development mode (disable in production) -->
 
