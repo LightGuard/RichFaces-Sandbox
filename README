@@ -1,3 +1,4 @@
 This is a simple sandbox application for trying out ideas and figuring out
 bugs.  It is built using gradle 0.9 (currently).
 
+Gradle does not need to be installed, simply using gradlew :)
